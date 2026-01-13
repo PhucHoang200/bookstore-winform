@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADEA2FF9-08D2-48D6-9111-F4A50DB94CCF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Doc, Version=12.12.12.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.Doc.12.12.12\lib\net40\Spire.Doc.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=10.12.4.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDF.10.12.4\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfirmOtp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmOtp.Designer.cs">
+      <DependentUpon>ConfirmOtp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportReportHelper.cs" />
+    <Compile Include="fCT_DonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCT_DonHang.Designer.cs">
+      <DependentUpon>fCT_DonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCT_PhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCT_PhieuNhap.Designer.cs">
+      <DependentUpon>fCT_PhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCT_Sach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCT_Sach.Designer.cs">
+      <DependentUpon>fCT_Sach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDashboardAdmin.Designer.cs">
+      <DependentUpon>fDashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDashboardEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDashboardEmployee.Designer.cs">
+      <DependentUpon>fDashboardEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThemTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThemTaiKhoan.Designer.cs">
+      <DependentUpon>fThemTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fUpdateTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fUpdateTaiKhoan.Designer.cs">
+      <DependentUpon>fUpdateTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExporter.cs" />
+    <Compile Include="InvoiceExporter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_BCDoanhThuAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_BCDoanhThuAdmin.Designer.cs">
+      <DependentUpon>UC_BCDoanhThuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_ChiTietSachTrongKho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_ChiTietSachTrongKho.Designer.cs">
+      <DependentUpon>UC_ChiTietSachTrongKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_DonhangAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_DonhangAdmin.Designer.cs">
+      <DependentUpon>UC_DonhangAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_DsDonhangAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_DsDonhangAdmin.Designer.cs">
+      <DependentUpon>UC_DsDonhangAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_DsPhieunhapAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_DsPhieunhapAdmin.Designer.cs">
+      <DependentUpon>UC_DsPhieunhapAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_HomeAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_HomeAdmin.Designer.cs">
+      <DependentUpon>UC_HomeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_KhachhangAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_KhachhangAdmin.Designer.cs">
+      <DependentUpon>UC_KhachhangAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_KhoAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_KhoAdmin.Designer.cs">
+      <DependentUpon>UC_KhoAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_NhacungcapAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_NhacungcapAdmin.Designer.cs">
+      <DependentUpon>UC_NhacungcapAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_NhapSachDaCo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_NhapSachDaCo.Designer.cs">
+      <DependentUpon>UC_NhapSachDaCo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_NhapSachMoiAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_NhapSachMoiAdmin.Designer.cs">
+      <DependentUpon>UC_NhapSachMoiAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_Nxbsachadmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_Nxbsachadmin.Designer.cs">
+      <DependentUpon>UC_Nxbsachadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_QLDonhangAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_QLDonhangAdmin.Designer.cs">
+      <DependentUpon>UC_QLDonhangAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_SachAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_SachAdmin.Designer.cs">
+      <DependentUpon>UC_SachAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_Sachsachadmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_Sachsachadmin.Designer.cs">
+      <DependentUpon>UC_Sachsachadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_Tacgiasachadmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_Tacgiasachadmin.Designer.cs">
+      <DependentUpon>UC_Tacgiasachadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_TaikhoanAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_TaikhoanAdmin.Designer.cs">
+      <DependentUpon>UC_TaikhoanAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_Theloaisachadmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_Theloaisachadmin.Designer.cs">
+      <DependentUpon>UC_Theloaisachadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_ThongkeAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Admin\UC_ThongkeAdmin.Designer.cs">
+      <DependentUpon>UC_ThongkeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Employee\UC_KhachhangEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Employee\UC_KhachhangEmployee.Designer.cs">
+      <DependentUpon>UC_KhachhangEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Employee\UC_NxbsachEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Employee\UC_NxbsachEmployee.Designer.cs">
+      <DependentUpon>UC_NxbsachEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Employee\UC_SachEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Employee\UC_SachEmployee.Designer.cs">
+      <DependentUpon>UC_SachEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Employee\UC_SachsachEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Employee\UC_SachsachEmployee.Designer.cs">
+      <DependentUpon>UC_SachsachEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Employee\UC_TacgiasachEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Employee\UC_TacgiasachEmployee.Designer.cs">
+      <DependentUpon>UC_TacgiasachEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Employee\UC_TheloaisachEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Employee\UC_TheloaisachEmployee.Designer.cs">
+      <DependentUpon>UC_TheloaisachEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XuatBaoCaoDoanhThu.cs" />
+    <EmbeddedResource Include="ConfirmOtp.resx">
+      <DependentUpon>ConfirmOtp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCT_DonHang.resx">
+      <DependentUpon>fCT_DonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCT_PhieuNhap.resx">
+      <DependentUpon>fCT_PhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCT_Sach.resx">
+      <DependentUpon>fCT_Sach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDashboardAdmin.resx">
+      <DependentUpon>fDashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDashboardEmployee.resx">
+      <DependentUpon>fDashboardEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThemTaiKhoan.resx">
+      <DependentUpon>fThemTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fUpdateTaiKhoan.resx">
+      <DependentUpon>fUpdateTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_BCDoanhThuAdmin.resx">
+      <DependentUpon>UC_BCDoanhThuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_ChiTietSachTrongKho.resx">
+      <DependentUpon>UC_ChiTietSachTrongKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_DonhangAdmin.resx">
+      <DependentUpon>UC_DonhangAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_DsDonhangAdmin.resx">
+      <DependentUpon>UC_DsDonhangAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_DsPhieunhapAdmin.resx">
+      <DependentUpon>UC_DsPhieunhapAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_HomeAdmin.resx">
+      <DependentUpon>UC_HomeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_KhachhangAdmin.resx">
+      <DependentUpon>UC_KhachhangAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_KhoAdmin.resx">
+      <DependentUpon>UC_KhoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_NhacungcapAdmin.resx">
+      <DependentUpon>UC_NhacungcapAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_NhapSachDaCo.resx">
+      <DependentUpon>UC_NhapSachDaCo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_NhapSachMoiAdmin.resx">
+      <DependentUpon>UC_NhapSachMoiAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_Nxbsachadmin.resx">
+      <DependentUpon>UC_Nxbsachadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_QLDonhangAdmin.resx">
+      <DependentUpon>UC_QLDonhangAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_SachAdmin.resx">
+      <DependentUpon>UC_SachAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_Sachsachadmin.resx">
+      <DependentUpon>UC_Sachsachadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_Tacgiasachadmin.resx">
+      <DependentUpon>UC_Tacgiasachadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_TaikhoanAdmin.resx">
+      <DependentUpon>UC_TaikhoanAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_Theloaisachadmin.resx">
+      <DependentUpon>UC_Theloaisachadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Admin\UC_ThongkeAdmin.resx">
+      <DependentUpon>UC_ThongkeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Employee\UC_KhachhangEmployee.resx">
+      <DependentUpon>UC_KhachhangEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Employee\UC_NxbsachEmployee.resx">
+      <DependentUpon>UC_NxbsachEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Employee\UC_SachEmployee.resx">
+      <DependentUpon>UC_SachEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Employee\UC_SachsachEmployee.resx">
+      <DependentUpon>UC_SachsachEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Employee\UC_TacgiasachEmployee.resx">
+      <DependentUpon>UC_TacgiasachEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Employee\UC_TheloaisachEmployee.resx">
+      <DependentUpon>UC_TheloaisachEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{0313a17a-52ca-4b05-bf3c-a36bdc70de67}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{92fdbcd5-05f0-468e-ae1a-c8b88ea2b1dc}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\pexels-eberhard-grossgasteiger-1624496.jpg" />
+    <None Include="Resources\paper2.png" />
+    <None Include="Resources\multiply.png" />
+    <None Include="Resources\service %281%291.png" />
+    <None Include="Resources\salary2.png" />
+    <None Include="Resources\remove3.png" />
+    <None Include="Resources\remove2.png" />
+    <None Include="Resources\plus %281%292.png" />
+    <None Include="Resources\add2.png" />
+    <None Include="Resources\refresh-page-option3.png" />
+    <None Include="Resources\search-interface-symbol3.png" />
+    <None Include="Resources\salary1.png" />
+    <None Include="Resources\paper1.png" />
+    <None Include="Resources\paper.png" />
+    <None Include="Resources\salary.png" />
+    <None Include="Resources\reset.png" />
+    <None Include="Resources\remove1.png" />
+    <None Include="Resources\updated.png" />
+    <None Include="Resources\refresh-page-option2.png" />
+    <None Include="Resources\plus %281%291.png" />
+    <None Include="Resources\add1.png" />
+    <None Include="Resources\search-interface-symbol2.png" />
+    <None Include="Resources\refresh-page-option1.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\removed1.png" />
+    <None Include="Resources\removed.png" />
+    <None Include="Resources\service %281%29.png" />
+    <None Include="Resources\plus %281%29.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\revenue.png" />
+    <None Include="Resources\description.png" />
+    <None Include="Resources\warehouse_3045703.png" />
+    <None Include="Resources\account-login_17515464.png" />
+    <None Include="Resources\employee_912267.png" />
+    <None Include="Resources\service.png" />
+    <None Include="Resources\client1.png" />
+    <None Include="Resources\order-processing.png" />
+    <None Include="Resources\search-interface-symbol1.png" />
+    <None Include="Resources\order1.png" />
+    <None Include="Resources\stack-of-books.png" />
+    <None Include="Resources\order.png" />
+    <None Include="Resources\client.png" />
+    <None Include="Resources\book-shop.png" />
+    <None Include="Resources\house.png" />
+    <None Include="Resources\home1.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\refresh-page-option.png" />
+    <None Include="Resources\search-interface-symbol.png" />
+    <None Include="Resources\books.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+</Project>
