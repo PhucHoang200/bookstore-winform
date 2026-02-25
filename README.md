@@ -1,4 +1,4 @@
-```markdown
+
 # 📚 BookStore – Phần mềm Quản Lý Cửa Hàng Bán Sách (WinForms C#)
 
 ## 1. Giới thiệu
@@ -24,7 +24,6 @@ Phần mềm phù hợp cho các cửa hàng sách quy mô nhỏ và vừa, mong
 
 Project được tổ chức theo mô hình **3-Layer Architecture**:
 
-```
 
 BookStore/
 ├── BUS/  (Business Logic Layer)
@@ -33,7 +32,6 @@ BookStore/
 ├── GUI/  (Graphical User Interface)
 └── BookStore.sln
 
-```
 
 ### 🔹 DTO (Data Transfer Object)
 - Định nghĩa các class đại diện cho thực thể:
@@ -67,7 +65,6 @@ BookStore/
 
 ## 4. Cấu trúc thư mục ngoại vi
 
-```
 
 WinForm/
 ├── BaoCao/      (Chứa file PDF báo cáo)
@@ -78,7 +75,6 @@ WinForm/
 ├── LICENSE
 └── README.md
 
-```
 
 ---
 
@@ -203,7 +199,6 @@ Hệ thống hỗ trợ xuất dữ liệu dưới nhiều định dạng:
 
 Các file được lưu trong:
 
-```
 
 WinForm/BaoCao/
 WinForm/HoaDon/
@@ -295,12 +290,3 @@ Dự án được phát hành theo file `LICENSE` đi kèm repository.
 
 BookStore là một hệ thống quản lý cửa hàng bán sách được xây dựng bài bản theo kiến trúc nhiều tầng, đáp ứng đầy đủ các yêu cầu quản lý thực tế.
 Phần mềm giúp tối ưu hóa quy trình vận hành, nâng cao tính chính xác và hỗ trợ ra quyết định thông qua hệ thống báo cáo thống kê chi tiết.
-
----
-
-**Tác giả:**
-Sinh viên thực hiện đề tài "Quản lý cửa hàng bán sách"
-Sử dụng C# – WinForms – SQL Server
-
-```
-```
