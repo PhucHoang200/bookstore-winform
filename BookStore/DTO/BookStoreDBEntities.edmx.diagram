@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="477ad3aec9cb4654b1ba2359f260089d" Name="Diagram1">
+      <Diagram DiagramId="360aca207d1842e5a82874e6360c1c94" Name="Diagram1">
         <EntityTypeShape EntityType="BookStoreDBModel.CT_DonHang" Width="1.5" PointX="8.25" PointY="4.25" IsExpanded="true" />
         <EntityTypeShape EntityType="BookStoreDBModel.CT_PhieuNhap" Width="1.5" PointX="5.25" PointY="8.25" IsExpanded="true" />
         <EntityTypeShape EntityType="BookStoreDBModel.DonHang" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
@@ -18,16 +18,16 @@
         <EntityTypeShape EntityType="BookStoreDBModel.TaiKhoan" Width="1.5" PointX="6" PointY="17.625" IsExpanded="true" />
         <EntityTypeShape EntityType="BookStoreDBModel.TheLoai" Width="1.5" PointX="5.25" PointY="15" IsExpanded="true" />
         <EntityTypeShape EntityType="BookStoreDBModel.VaiTro" Width="1.5" PointX="3.75" PointY="18.375" IsExpanded="true" />
-        <AssociationConnector Association="BookStoreDBModel.FK__CT_DonHan__IdDon__70DDC3D8" ManuallyRouted="false" />
-        <AssociationConnector Association="BookStoreDBModel.FK__CT_DonHan__IdSac__71D1E811" ManuallyRouted="false" />
-        <AssociationConnector Association="BookStoreDBModel.FK__CT_DonHan__IdTai__72C60C4A" ManuallyRouted="false" />
-        <AssociationConnector Association="BookStoreDBModel.FK__CT_PhieuN__MaPhi__01142BA1" ManuallyRouted="false" />
-        <AssociationConnector Association="BookStoreDBModel.FK__CT_PhieuN__MaSac__02084FDA" ManuallyRouted="false" />
-        <AssociationConnector Association="BookStoreDBModel.FK__DonHang__IdKhach__6E01572D" ManuallyRouted="false" />
-        <AssociationConnector Association="BookStoreDBModel.FK__Kho__IdSach__778AC167" ManuallyRouted="false" />
-        <AssociationConnector Association="BookStoreDBModel.FK__PhieuNhap__MaNCC__7C4F7684" ManuallyRouted="false" />
-        <AssociationConnector Association="BookStoreDBModel.FK__Sach__IdNXB__4CA06362" ManuallyRouted="false" />
-        <AssociationConnector Association="BookStoreDBModel.FK__TaiKhoan__IdVaiT__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.CT_DonHang_IdDonHang_fkey" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.CT_DonHang_IdSach_fkey" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.CT_DonHang_IdTaiKhoan_fkey" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.CT_PhieuNhap_MaPhieuNhap_fkey" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.CT_PhieuNhap_MaSach_fkey" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.DonHang_IdKhachHang_fkey" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.Kho_IdSach_fkey" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.PhieuNhapSach_MaNCC_fkey" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.Sach_IdNXB_fkey" ManuallyRouted="false" />
+        <AssociationConnector Association="BookStoreDBModel.TaiKhoan_IdVaiTro_fkey" ManuallyRouted="false" />
         <AssociationConnector Association="BookStoreDBModel.Sach_NhaCungCap" ManuallyRouted="false" />
         <AssociationConnector Association="BookStoreDBModel.Sach_TacGia" ManuallyRouted="false" />
         <AssociationConnector Association="BookStoreDBModel.Sach_TheLoai" ManuallyRouted="false" />
