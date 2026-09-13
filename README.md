@@ -367,31 +367,6 @@ Màn hình tài khoản hỗ trợ tạo tài khoản và phân quyền sử d�
 
 ![Quản lý tài khoản](docs/images/account.png)
 
-### Hướng dẫn thêm ảnh demo
-
-1. Tạo thư mục:
-
-```text
-docs/images/
-```
-
-2. Chụp ảnh từng màn hình bằng Snipping Tool, Win + Shift + S hoặc công cụ chụp màn hình khác.
-3. Đặt tên file theo danh sách ở trên.
-4. Copy ảnh vào `docs/images/`.
-5. Kiểm tra đường dẫn tương đối trong README:
-
-```markdown
-![Tên màn hình](docs/images/ten-file.png)
-```
-
-### Lưu ý khi chụp ảnh
-
-- Nên chụp ở cùng độ phân giải hoặc tỷ lệ cửa sổ tương tự nhau.
-- Ẩn thông tin cá nhân, mật khẩu, connection string và dữ liệu nhạy cảm.
-- Nên dùng dữ liệu mẫu có tính minh họa.
-- Chụp các màn hình thể hiện rõ chức năng thay vì chỉ chụp màn hình trống.
-- Không đưa ảnh chứa thông tin đăng nhập SQL Server lên GitHub.
-
 ---
 
 ## 12. Hạn chế
